@@ -479,57 +479,9 @@ figure {
 <!-- Menu -->
 <div class="menu">
   <div class="menu__container bg-white">
-    <nav class="menu__nav">
-      <ul class="menu__list">
-        <li class="menu__item js-span">Follow me on:</li>
-        <li class="menu__item">
-          <a class="menu__link" href="https://www.linkedin.com/in/praveen-kumar-inbox/" target="_blank">LinkedIn</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="https://github.com/inboxpraveen" target="_blank">Github</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="https://twitter.com/InboxPraveen" target="_blank">Twitter</a>
-        </li>
-          <li class="menu__item">
-          <a class="menu__link" href="https://medium.com/@pklappy21" target="_blank">Medium</a>
-        </li>
-      </ul>
-    </nav>
-    <nav class="menu__nav">
-      <ul class="menu__list">
-        <li class="menu__item js-span">Other Links</li>
-<!--
-        <li class="menu__item">
-          <a class="menu__link" href="#" target="_blank">All Heroku Projects</a>
-        </li>
--->
-        <li class="menu__item">
-          <a class="menu__link" href="https://inboxpraveen.github.io" target="_blank">Portfolio</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="https://medium.com/hitchhikers-guide-to-deep-learning" target="_blank">My Blogs</a>
-        </li>
-        <li class="menu__item menu__item--contact">
-          <span>Contact</span>
-          <div class="menu__info">
-            <span>Bengaluru, IN</span>
-            <span>
-              <a class="menu__external" href="mailto:inbox.praveen.kumar17@gmail.com">Click here to mail</a>
-            </span>
-          </div>
-        </li>
-      </ul>
-    </nav>
-    <div class="menu__sidebar">
-      <div class="menu__flip">
-        <div class="menu__copy">
-          <span>Checkout my portfolio website:</span>
-          <span><a class="menu__external" href="https://inboxpraveen.github.io" target="_blank" rel="noopener noreferrer">inboxpraveen.github.io</a></span>
-        </div>
-      </div>
-    </div>
-  </div>
+    
+   
+   
   <div class="menu__img bg-black">
     <figure class="absolute-bg" style="background-image: url('https://source.unsplash.com/t2Sai-AqIpI/900x1600');"></figure>
   </div>
@@ -537,15 +489,13 @@ figure {
 
 <!-- Demo -->
     <div class="movie">
-        <h2><u>Movie Recommendation System</u></h2>
+        <h2><u>Movie Reviews & Recommendation System</u></h2>
         <form action="{{ url_for('main') }}" method="POST">
             <input type="text" id="movie_name" name="movie_name" placeholder="Enter a full movie name" required />
             <input type="submit" id="submission_button" value="Submit"/>
         </form>
-        <p style="color: #919191; padding: 1em;">The model uses <b>Content Based Recommendations</b> to find similar movies. Intuitive idea behind is <i>"If a person likes a particular item, he/she will also like an item that is similar to it."</i> The dataset is taken from <a href="https://www.kaggle.com/" target="_blank">Kaggle.com</a>.</p>
-        <br>
-        <p>Read more on recommendation systems on <a href="https://developers.google.com/machine-learning/recommendation" target="_blank">Google Developers Machine Learning Blogs</a>.</p>
-  </div>
+        
+          </div>
 <!-- partial -->
   <script src='https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js'></script>
 <script src='https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js'></script>
