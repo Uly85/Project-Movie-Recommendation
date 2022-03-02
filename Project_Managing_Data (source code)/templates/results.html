@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+
+table.dataframe, .dataframe th, .dataframe td {
+  border-bottom: 1px solid #C8C8C8;
+  border-collapse: collapse;
+  text-align:left;
+  padding: 10px;
+  word-wrap:break-word;
+}
+
+
+#results {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#results td, #results th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+#results tr:nth-child(even){background-color: #f2f2f2;}
+
+#results tr:hover {background-color: #ddd;}
+
+#results th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #009EFF;
+  color: white;
+}
+</style>
+  </head>
+<body style="background-color: #EBF7FE;">
+    <h1 style="color:#009EFF; line-height: 140%; font-family: 'Roboto', Arial, sans-serif;">Movie Reviews For Keyword: <font style="color:#000000;">{{keyword}}</font></h1>
+    <table id="results" style = "text-align: center;">
+      <!-- here is a for-loop to give us all the socks -->
+      <tr>
+        <th>Movie Title</th>
+        <th>Movie Review</th>
+        <th>Sentiment</th>
+        <th>Source</th>
+        <th>Sentiment Score</th>
+        <th>Movie Recommendation</th>
+      </tr>
+      {% for doc in results %}
+      <tr>
+        {% for d in doc %}
+        <td style="word-wrap: break-word;">{{d}}</td>
+         {% endfor %}
+      </tr>
+      {% endfor %}
+    </table>
+</body>
+</html>
